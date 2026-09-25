@@ -8,7 +8,13 @@
   <link rel="icon" href="IMG_0827.PNG">
   <style>html,body,iframe{margin:0;width:100%;height:100%;border:0}</style>
 </head>
-<body>
-  <iframe src="https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwKtEhdrYRL4Fc6t0JiLYkY9OzNGLvNuznB9GxokdwHDcAmgST8ArMhX6nNcgkXA8A1/exec"></iframe>
+<body style="font-family:sans-serif;text-align:center;padding-top:40vh">
+  <a id="go" href="https://script.google.com/macros/s/AKfycbwKtEhdrYRL4Fc6t0JiLYkY9OzNGLvNuznB9GxokdwHDcAmgST8ArMhX6nNcgkXA8A1/exec" style="font-size:20px">修理受付台帳を開く</a>
+  <script>
+    const url = document.getElementById('go').href;
+    if (navigator.standalone || matchMedia('(display-mode: standalone)').matches) {
+      location.replace(url);
+    }
+  </script>
 </body>
 </html>
